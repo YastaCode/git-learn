@@ -53,3 +53,22 @@ Changes to be committed:
   (use "git rm --cached ..." to unstage)
     new file: index.html
 ``` 
+## Git Add More than One File
+A README.md file that describes the repository (recommended for all repositories):
+A basic external style sheet style.css:
+```bash
+% touch README.md
+% touch myStyle.css
+% git add --all
+% git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached ..." to unstage)
+        new file:   README.md
+        new file:   style.css
+        new file:   index.html
+```
+**Note**: The shorthand command for git add --all is git add -A
