@@ -24,3 +24,20 @@ Once you have navigated to the correct folder, you can initialize Git on that fo
 % git init
 Initialized empty Git repository in /Users/user/myProject/.git/
 ```
+## Git Adding New Files
+For this example, I am going to use a simple HTML file like this:
+```bash
+% touch index.html
+% ls
+index.html
+% git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add ..." to include in what will be committed)
+    index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
