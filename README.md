@@ -41,3 +41,15 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
+## Git Staging Environment
+For now, we are done working with index.html> So we can add in to the Staging Environment:
+```bash
+% git add index.html
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached ..." to unstage)
+    new file: index.html
+``` 
