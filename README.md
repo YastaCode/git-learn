@@ -18,3 +18,9 @@ Now let's create a new folder for our project:
 % mkdir myProject
 % cd myProject
 ```
+## Initialize Git
+Once you have navigated to the correct folder, you can initialize Git on that folder:
+```bash
+% git init
+Initialized empty Git repository in /Users/user/myProject/.git/
+```
