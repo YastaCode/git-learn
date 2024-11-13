@@ -72,3 +72,15 @@ Changes to be committed:
         new file:   index.html
 ```
 **Note**: The shorthand command for git add --all is git add -A
+## Git Commit
+When you commit, we should **always** include a **message**
+```bash
+% git commit -m "First release of Hello World!"
+[master (root-commit) 221ec6e] First release of Hello World!
+ 3 files changed, 26 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 bluestyle.css
+ create mode 100644 index.html
+ ```
+ The Staging Environment has been committed to our repo, with the message:
+"First release of Hello World!"
