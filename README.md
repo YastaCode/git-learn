@@ -6,3 +6,9 @@ The first thing we need to do, is to check if Git is properly installed:
 % git --version
 git version 2.39.5 (Apple Git-154)
 ```
+## Configure Git
+This is important for version control systems, as each Git commit uses this information:
+```bash
+% git config --global user.name "name-user"
+% git config --global user.email "email-user"
+```
