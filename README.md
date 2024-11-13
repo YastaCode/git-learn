@@ -84,3 +84,21 @@ When you commit, we should **always** include a **message**
  ```
  The Staging Environment has been committed to our repo, with the message:
 "First release of Hello World!"
+## Git Commit without Stage
+Let's add a small update to index.html
+```bash
+% git commit --short
+M index.html
+```
+**Note** Short status flags are:
+* ?? - Untracked files
+*  A - Files added to stage
+*  M - Modified files
+*  D - Deleted files
+
+We see the file we expected is modified. So let's commit it directly:
+```bash
+% git commit -a -m"Updated index.html with a new line" 
+[master 09f4acd] Updated index.html with a new line
+ 1 file changed, 1 insertion(+)
+```
