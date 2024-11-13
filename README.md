@@ -118,3 +118,11 @@ Date:   Fri Mar 26 09:13:07 2021 +0100
 
     First release of Hello World!
 ```
+## Git Help
+If you are having trouble remembering commands or options for commands, you can use Git help.
+
+ Let's go over the different commands.
+ * % [git command --help](https://www.w3schools.com/git/git_help.asp?remote=github#:~:text=Git%20%2Dhelp%20See%20Options%20for%20a%20Specific%20Command)
+ * % [git help --all](https://www.w3schools.com/git/git_help.asp?remote=github#:~:text=Git%20help%20%2D%2Dall%20See%20All%20Possible%20Commands)
+ 
+ **Note**: If you find yourself stuck in the list view, SHIFT + G to jump the end of the list, then q to exit the view.
