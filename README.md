@@ -12,3 +12,9 @@ This is important for version control systems, as each Git commit uses this info
 % git config --global user.name "name-user"
 % git config --global user.email "email-user"
 ```
+## Creating Git Folder
+Now let's create a new folder for our project:
+```bash
+% mkdir myProject
+% cd myProject
+```
