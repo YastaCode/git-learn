@@ -124,5 +124,69 @@ If you are having trouble remembering commands or options for commands, you can 
  Let's go over the different commands.
  * % [git command --help](https://www.w3schools.com/git/git_help.asp?remote=github#:~:text=Git%20%2Dhelp%20See%20Options%20for%20a%20Specific%20Command)
  * % [git help --all](https://www.w3schools.com/git/git_help.asp?remote=github#:~:text=Git%20help%20%2D%2Dall%20See%20All%20Possible%20Commands)
- 
+
  **Note**: If you find yourself stuck in the list view, SHIFT + G to jump the end of the list, then q to exit the view.
+
+ ## Git Branch
+ In Git, a branch is a new/separate version of the main repository.
+
+ We are working in our local repository, and we do not want to disturb or possibly wreck the main project.
+
+So we create a new **branch**:
+```bash
+% git branch hello-world-images
+```
+Let's confirm that we have created a new **branch**:
+```bash
+% git branch
+  hello-world-images
+* master
+```
+**checkout** is the command used to check out a **branch**. Moving us from the current **branch**, to the one specified at the end **of the command:
+```bash
+% git checkout hello-world-images
+Switched to branch 'hello-world-images'
+
+% git branch
+* hello-world-images
+  master
+```
+Now we have moved our current workspace from the master branch, to the new **branch**
+```bash
+% git status
+On branch hello-world-images
+Changes not staged for commit:
+  (use "git add ..." to update what will be committed)
+  (use "git restore ..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add ..." to include in what will be committed)
+        img_hello_world.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+So we need to add both files to the Staging Environment for this **branch**:
+```bash
+% git add --all
+```
+Using --all instead of individual filenames will **Stage** all changed (new, modified, and deleted) files.
+Check the status of the branch:
+```bash
+% git status
+On branch hello-world-images
+Changes to be committed:
+  (use "git restore --staged ..." to unstage)
+    new file: img_hello_world.jpg
+    modified: index.html
+```
+We are happy with our changes. So we will commit them to the branch:
+```bash
+% git commit -m "Added image to Hello World"
+[hello-world-images 0312c55] Added image to Hello World
+2 files changed, 1 insertion(+)
+create mode 100644 img_hello_world.jpg
+```
+Now we have a new branch, that is different from the master branch.
+
+**Note**: Using the -b option on checkout will create a new branch, and move to it, if it does not exist
